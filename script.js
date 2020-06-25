@@ -7,8 +7,7 @@ var epoch1900 = 25569 * 86400 * 1000;
 $(document).ready(function() {
 	console.log('script.js')
 	setInterval(function() {
-		// var now = Number(new Date())+epoch1900
-		var now = Number(new Date()) - new Date(1993,2-1,7,5,27)
+		var now = Number(new Date())+epoch1900
 		now /= 86400 * 1000;
 		now -= 4 / 24
 		now = String(now)
